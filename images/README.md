@@ -1,0 +1,2 @@
+- Add hero background images 'hero-bg.png' and 'hero.webm'.
+- Add your headshot as 'isaac-headshot.png'.

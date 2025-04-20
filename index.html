@@ -1,164 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Isaac Buziba | Portfolio</title>
-  <meta name="description" content="Senior Technical Consultant & AI/ML Developer. Explore my projects, blog, and get in touch." />
+  <meta name="description" content="Senior Technical Consultant & AI/ML Developer specializing in SSO, Java, React, Next.js, and TensorFlow." />
+  <meta name="keywords" content="Isaac Buziba, AI Developer, SSO Consultant, OAuth2, Java, React, Next.js, TensorFlow, Portfolio" />
+  <meta name="author" content="Isaac Buziba" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Social Meta -->
   <meta property="og:title" content="Isaac Buziba | Portfolio" />
-  <meta property="og:description" content="Senior Technical Consultant & AI/ML Developer." />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Portfolio" />
-  <meta property="og:url" content="https://isaacbuz.github.io" /><meta name="theme-color" content="#121212" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta property="og:description" content="Senior Technical Consultant & AI/ML Developer" />
+  <meta property="og:image" content="https://isaacbuziba.com/images/hero-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Isaac Buziba",
+    "jobTitle": "Senior Technical Consultant & AI/ML Developer",
+    "url": "https://isaacbuziba.com",
+    "sameAs": ["https://www.linkedin.com/in/isaac-buziba-6835aba1/"]
+  }
+  </script>
+
+  <!-- Google AdSense (remove if you don't have actual IDs) -->
+  <meta name="google-adsense-account" content="ca-pub-YOUR_ACTUAL_ID" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ACTUAL_ID" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="light">
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <main id="main-content">
-    <!-- HERO -->
-    <section id="hero" class="position-relative text-center text-white">
-      <img id="bg-video" src="https://via.placeholder.com/1920x1080" alt="Hero Background" />
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <img src="https://via.placeholder.com/120?text=Isaac" alt="Isaac Buziba" class="avatar mb-4" />
-        <h2 class="greeting fade-item">Hi,</h2>
-        <h1 class="name fade-item">I’m Isaac Buziba</h1>
-        <p class="title fade-item">Senior Technical Consultant &amp; AI/ML Developer</p>
-        <a href="#projects" class="btn btn-primary fade-item">View Projects</a>
-        <button id="dark-toggle" class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-3">
-          🌙
-        </button>
-      </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I’m a Senior Technical Consultant and AI/ML Developer with a passion for building secure, scalable applications and exploring emerging technologies. Based in New Jersey.</p>
-      </div>
-    </section>
+<body class="light scroll-smooth" data-theme="light">
+  <!-- Navigation -->
+  <nav id="main-nav" class="main-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- SKILLS -->
-    <section id="skills" class="py-5 bg-light">
-      <div class="container">
-        <h2>Tech Stack</h2>
-        <div class="d-flex flex-wrap gap-3">
-          <div class="skill-item" aria-label="JavaScript"><img src="https://via.placeholder.com/50?text=JS" alt="JavaScript logo" /></div>
-          <div class="skill-item" aria-label="React"><img src="https://via.placeholder.com/50?text=React" alt="React logo" /></div>
-          <div class="skill-item" aria-label="Next.js"><img src="https://via.placeholder.com/50?text=Next" alt="Next.js logo" /></div>
-          <div class="skill-item" aria-label="TensorFlow"><img src="https://via.placeholder.com/50?text=TF" alt="TensorFlow logo" /></div>
-          <div class="skill-item" aria-label="Bootstrap"><img src="https://via.placeholder.com/50?text=BS" alt="Bootstrap logo" /></div>
+  <!-- HERO -->
+  <section id="hero" class="position-relative text-center text-white">
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container fade-item">
+      <h1>Isaac Buziba</h1>
+      <p class="hero-subheading">Senior Technical Solutions Consultant, AI & ML Expert</p>
+    </div>
+    <div class="scroll-down fade-item"><span>▼</span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5 text-center">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m Isaac Buziba, a Senior Technical Solutions Consultant and AI & ML Expert with over 8 years of experience in AdTech, EdTech, and enterprise SaaS. Originally from Uganda, East Africa, I pursued my passion for technology at Kean University in New Jersey, earning a Bachelor’s in Information Technology and a Master’s in Information Systems Technology, specializing in High-Performance Computing, Big Data, Data Mining, and Cloud Computing.</p>
+      <p>I’ve worked with industry leaders like Meta, LinkedIn, NJ Transit, Merck, and Johnson & Johnson, building scalable solutions using Java, cloud platforms (AWS, Azure), and advanced protocols like SSO and OAuth. I thrive on solving complex challenges, bridging technical and business needs, and mentoring others. Currently, I’m pursuing an AI Certification at the University of Texas at Austin to further my impact in AI and machine learning.</p>
+
+      <!-- AdSense (remove if you don't have actual IDs) -->
+      <div class="adsense-container my-4 text-center">
+        <ins class="adsbygoogle"
+             style="display:block; min-height:90px;"
+             data-ad-client="ca-pub-YOUR_ACTUAL_ID"
+             data-ad-slot="YOUR_AD_SLOT_ID"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (LOGOS) -->
+  <section id="experience" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="mb-4">Experience</h2>
+      <div class="company-strip d-flex justify-content-center flex-wrap gap-4">
+        <img src="icons/facebook_logo.jpeg" alt="Meta logo" />
+        <img src="icons/linkedin_logo.jpeg" alt="LinkedIn logo" />
+        <img src="icons/nj_transit_logo.jpeg" alt="NJ Transit logo" />
+        <img src="icons/L&T_Technology_Services_logo.png" alt="L&T logo" />
+        <img src="icons/merck_logo.jpeg" alt="Merck logo" />
+        <img src="icons/johnson__johnson_logo.jpeg" alt="Johnson & Johnson logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5 text-center">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <blockquote>"Isaac brought order to our OAuth onboarding process in record time. One of the most scalable engineers I’ve worked with."</blockquote>
+      <cite>- Sr. Engineer, Meta</cite>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Blog Highlights</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <article class="blog-post-card fade-item">
+            <a href="blog/ai-post.html" class="text-decoration-none d-block">
+              <img src="images/ai.png" class="blog-post-image" alt="AI teaser" />
+              <h3 class="mt-3">Harnessing AI: Transforming Tomorrow</h3>
+              <p class="blog-post-excerpt">Discover how AI is reshaping industries and accelerating innovation.</p>
+            </a>
+          </article>
+        </div>
+        <div class="col-md-6 mb-4">
+          <article class="blog-post-card fade-item">
+            <a href="blog/saml-integration.html" class="text-decoration-none d-block">
+              <img src="images/samlpic.png" class="blog-post-image" alt="SAML flow diagram" />
+              <h3 class="mt-3">Optimizing SAML Integrations</h3>
+              <p class="blog-post-excerpt">Step-by-step guide to multi-provider SSO with passport-saml and Redis.</p>
+            </a>
+          </article>
         </div>
       </div>
-    </section>
+      <a href="blog/index.html" class="btn btn-outline-primary mt-4">View All Posts</a>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2>Selected Projects</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Voter Prompt App screenshot">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Voter Prompt App</h5>
-                <p class="card-text flex-grow-1">A modular SSO widget supporting Auth0, Okta, Azure AD...</p>
-                <a href="https://github.com/isaacbuz/VoterPromptApp" class="mt-3 btn btn-outline-primary">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- RESUME -->
+  <section id="resume" class="py-5 text-center">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>Download my professional resume to learn more about my experience and skills.</p>
+      <a href="documents/Isaac_Buziba_Resume_Professional.docx" class="btn btn-outline-primary resume-download" download>Download Resume</a>
+    </div>
+  </section>
 
-    <!-- BLOG -->
-    <section id="blog" class="py-5 bg-light">
-      <div class="container">
-        <h2>Latest Posts</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">Brief teaser of your first blog post...</p>
-                <a href="blog/post1.html" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="blog/index.html" class="btn btn-link mt-3">View all posts</a>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="py-5">
-      <div class="container">
-        <h2>Testimonials</h2>
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <blockquote class="blockquote text-center">
-                <p>“Isaac’s work on our SSO integration was outstanding!”</p>
-                <footer class="blockquote-footer">Client at Meta</footer>
-              </blockquote>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-5 bg-light">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-      </div>
-    </section>
-
-  </main>
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Let’s connect about projects, consulting, or opportunities.</p>
+      <a href="mailto:isaac.buziba@email.com" class="btn btn-outline-dark me-2">📧 Email Me</a>
+      <a href="https://www.linkedin.com/in/isaac-buziba-6835aba1/" class="btn btn-outline-primary" target="_blank">🔗 LinkedIn</a>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer class="py-4 text-center">
+  <footer class="py-4 text-center bg-white text-muted">
     <div class="container">
-      <a href="resume.pdf" class="btn btn-secondary me-3">Download Resume</a>
-      <a href="mailto:isaacbuz@gmail.com" class="btn btn-primary">Hire Me</a>
-      <p class="mt-3">&copy; 2025 Isaac Buziba</p>
+      <p class="mb-1">© <span id="current-year"></span> Isaac Buziba. All rights reserved.</p>
+      <p class="small">
+        <a href="mailto:isaac.buziba@email.com" class="text-muted">isaac.buziba@email.com</a> |
+        <a href="https://www.linkedin.com/in/isaac-buziba-6835aba1/" class="text-muted" target="_blank">LinkedIn</a>
+      </p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-  </script>
   <script src="js/main.js"></script>
-  
 </body>
 </html>

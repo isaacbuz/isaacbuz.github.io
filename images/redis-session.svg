@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1a1a2e"/>
+    </marker>
+  </defs>
+  <rect x="10" y="10" width="100" height="50" fill="#00c4b4" rx="5"/>
+  <text x="60" y="40" fill="#fff" text-anchor="middle" font-family="sans-serif">User</text>
+
+  <rect x="150" y="10" width="100" height="50" fill="#1e90ff" rx="5"/>
+  <text x="200" y="40" fill="#fff" text-anchor="middle" font-family="sans-serif">App</text>
+
+  <rect x="290" y="10" width="100" height="50" fill="#ff6f61" rx="5"/>
+  <text x="340" y="40" fill="#fff" text-anchor="middle" font-family="sans-serif">Redis</text>
+
+  <rect x="150" y="90" width="100" height="50" fill="#1e90ff" rx="5"/>
+  <text x="200" y="120" fill="#fff" text-anchor="middle" font-family="sans-serif">App</text>
+
+  <path d="M110 35 H150" stroke="#1a1a2e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="130" y="55" fill="#1a1a2e" font-size="12" font-family="sans-serif">Login</text>
+
+  <path d="M250 35 H290" stroke="#1a1a2e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="270" y="55" fill="#1a1a2e" font-size="12" font-family="sans-serif">Store Session</text>
+
+  <path d="M340 60 V90 H250" stroke="#1a1a2e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <text x="300" y="80" fill="#1a1a2e" font-size="12" font-family="sans-serif">Retrieve Session</text>
+</svg>

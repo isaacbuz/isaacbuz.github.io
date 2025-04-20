@@ -1,15 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Blog | Isaac Buziba</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog – Isaac Buziba</title>
+  <meta name="description" content="Isaac Buziba's blog on AI, SAML integrations, and technology insights." />
+  <meta name="keywords" content="Isaac Buziba, AI, SAML, Technology, Blog" />
+  <meta name="author" content="Isaac Buziba" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Social Meta -->
+  <meta property="og:title" content="Blog – Isaac Buziba" />
+  <meta property="og:description" content="Isaac Buziba's blog on AI, SAML integrations, and technology insights." />
+  <meta property="og:image" content="https://isaacbuziba.com/images/hero-bg.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Isaac Buziba's Blog",
+    "author": {
+      "@type": "Person",
+      "name": "Isaac Buziba",
+      "url": "https://www.linkedin.com/in/isaac-buziba-6835aba1/"
+    },
+    "url": "https://isaacbuziba.com/blog/index.html"
+  }
+  </script>
+
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
-  <a href="../index.html" class="btn btn-link">&larr; Back to Home</a>
-  <h1>Blog</h1>
-  <ul>
-    <li><a href="post1.html">Post Title 1</a> — January 1, 2025</li>
-  </ul>
+<body class="scroll-smooth" data-theme="light">
+  <!-- Navigation -->
+  <nav id="main-nav" class="main-nav">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+        <li><a href="../index.html#testimonials">Testimonials</a></li>
+        <li><a href="../index.html#resume">Resume</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Blog Teaser -->
+  <section id="blog-teaser" class="position-relative text-center text-white">
+    <div class="blog-teaser-background"></div>
+    <div class="hero-overlay"></div>
+    <div class="container fade-item">
+      <h1>Isaac Buziba's Blog</h1>
+      <p class="hero-subheading">Insights on AI, SAML Integrations, and Technology</p>
+    </div>
+    <div class="scroll-down fade-item"><span>▼</span></div>
+  </section>
+
+  <!-- Blog Posts -->
+  <main class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Latest Blog Posts</h2>
+
+      <article class="blog-post-card mb-5 fade-item">
+        <a href="ai-post.html" class="text-decoration-none d-block">
+          <img src="../images/ai.png" class="blog-post-image" alt="AI teaser" />
+          <h3 class="mt-3">Harnessing AI: Transforming Tomorrow</h3>
+          <p class="blog-post-excerpt">Discover how AI is reshaping industries and accelerating innovation.</p>
+        </a>
+      </article>
+
+      <article class="blog-post-card mb-5 fade-item">
+        <a href="saml-integration.html" class="text-decoration-none d-block">
+          <img src="../images/samlpic.png" class="blog-post-image" alt="SAML flow diagram" />
+          <h3 class="mt-3">Optimizing SAML Integrations</h3>
+          <p class="blog-post-excerpt">Step-by-step guide to multi-provider SSO with passport-saml and Redis.</p>
+        </a>
+      </article>
+
+      <a href="../index.html" class="btn btn-outline-secondary mt-4">← Back to Home</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-1">© <span id="current-year"></span> Isaac Buziba. All rights reserved.</p>
+      <p class="small">
+        <a href="mailto:isaac.buziba@email.com">isaac.buziba@email.com</a> |
+        <a href="https://www.linkedin.com/in/isaac-buziba-6835aba1/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
 </body>
 </html>

@@ -1,29 +1,35 @@
-// Dark-mode toggle
-const toggle = document.getElementById('dark-toggle');
-const root = document.body;
-const theme = localStorage.getItem('theme') || 'light';
-root.classList.add(theme);
-toggle.textContent = theme === 'light' ? '🌙' : '☀️';
-toggle.addEventListener('click', () => {
-  const next = root.classList.contains('light') ? 'dark' : 'light';
-  root.classList.replace(root.classList.contains('light') ? 'light' : 'dark', next);
-  toggle.textContent = next === 'light' ? '🌙' : '☀️';
-  localStorage.setItem('theme', next);
-});
+window.addEventListener('DOMContentLoaded', () => {
+  // Fade-in animations
+  document.querySelectorAll('.fade-item').forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 500 + i * 400);
+  });
 
-// Fade-in and speech
-document.addEventListener('DOMContentLoaded', () => {
-  const items = Array.from(document.querySelectorAll('.fade-item'));
-  items.forEach((el, i) => setTimeout(() => el.classList.add('visible'), 500 + i * 600));
-  setTimeout(() => {
-    if ('speechSynthesis' in window) {
-      const utter = new SpeechSynthesisUtterance(
-        "Welcome! I'm Isaac Buziba, Senior Technical Consultant and AI M L Developer."
-      );
-      const voices = speechSynthesis.getVoices();
-      if (voices.length) utter.voice = voices.find(v => /en[-_]?us/i.test(v.lang)) || voices[0];
-      utter.rate = 1;
-      speechSynthesis.speak(utter);
+  // AdSense handling
+  const adBlock = document.querySelector('.adsense-container');
+  if (window.adsbygoogle && adBlock) {
+    try {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      adBlock.style.display = 'none';
     }
-  }, 500 + items.length * 600 + 400);
+  }
+
+  // Dynamically set footer year
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+
+  // Navigation bar visibility on scroll
+  const nav = document.getElementById('main-nav');
+  // Dynamically select the first section (either #hero or #blog-teaser)
+  const firstSection = document.getElementById('hero') || document.getElementById('blog-teaser');
+
+  if (nav && firstSection) {
+    window.addEventListener('scroll', () => {
+      const sectionHeight = firstSection.offsetHeight;
+      if (window.scrollY > sectionHeight) {
+        nav.classList.add('visible');
+      } else {
+        nav.classList.remove('visible');
+      }
+    });
+  }
 });

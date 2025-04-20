@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1a1a2e"/>
+    </marker>
+  </defs>
+  <!-- React App -->
+  <rect x="150" y="80" width="100" height="50" fill="#1e90ff" rx="5"/>
+  <text x="200" y="110" fill="#fff" text-anchor="middle" font-family="sans-serif">React App</text>
+
+  <!-- IDP Circles -->
+  <circle cx="100" cy="20" r="30" fill="#ff6f61"/>
+  <text x="100" y="25" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">Auth0</text>
+
+  <circle cx="200" cy="20" r="30" fill="#ff6f61"/>
+  <text x="200" y="25" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">Okta</text>
+
+  <circle cx="300" cy="20" r="30" fill="#ff6f61"/>
+  <text x="300" y="25" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">Azure AD</text>
+
+  <!-- config file -->
+  <rect x="150" y="150" width="100" height="30" fill="#00c4b4" rx="5"/>
+  <text x="200" y="170" fill="#fff" text-anchor="middle" font-size="12" font-family="sans-serif">auth_config.json</text>
+
+  <!-- connections -->
+  <path d="M100 50 L150 80" stroke="#1a1a2e" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <path d="M200 50 L200 80" stroke="#1a1a2e" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <path d="M300 50 L250 80" stroke="#1a1a2e" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <path d="M200 130 V150" stroke="#1a1a2e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+</svg>
